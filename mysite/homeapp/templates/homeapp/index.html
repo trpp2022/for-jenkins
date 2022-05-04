@@ -1,0 +1,9 @@
+{% if latest_question_list %}
+    <ul>
+    {% for data in latest_question_list %}
+        <li><a href="/homeapp/{{ data.id }}/">{{ data.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No documents are available.</p>
+{% endif %}
