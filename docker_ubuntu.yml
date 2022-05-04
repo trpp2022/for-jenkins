@@ -45,7 +45,7 @@
         name: docker
     - name: Copy Image
       copy:
-        src: ./mysite.zip
+        src: mysite.zip
         dest: /home/slave/mysite.zip
     - name: load container from tarball
       docker_image:
